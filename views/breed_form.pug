@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1=title
+
+  form(method='POST' action='')
+    div.form-group
+      label(for='name') Breed:
+      input#name.form-control(type='text' placeholder='Husky, Bulldog etc.' name='name' required='true' value=(undefined===breed ? '' : breed.name) )
+      label(for='description') Description:
+      input#description.form-control(type='text' placeholder='Description of the breed' name='description' required='true' value=(undefined===breed ? '' : breed.description))
+      button.btn.btn-primary(type='submit') Submit
+
+  if errors
+    ul
+      for error in errors
+        li!= error.msg

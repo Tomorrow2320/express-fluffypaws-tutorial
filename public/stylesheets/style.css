@@ -1,0 +1,62 @@
+.sidebar-nav {
+  
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+
+}
+
+body {
+  background-image: url("../images/intro6.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.container-list {
+  width: 800px;
+  max-width: 900px;
+}
+
+.container-fluid {
+  color: #ffffff;
+}
+
+.col-sm-10 {
+  font-family: 'Yusei Magic', sans-serif;
+  justify-content: center;
+}
+
+.container-home {
+  width: 1200px;
+  max-width: 1200px;
+  text-align: left;
+}
+
+h1 {
+ font-size:  180px; 
+ text-align: left;
+}
+
+h2 {
+  font-size:  60px;
+}
+
+h3 {
+  font-size:  20px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+a {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+
+
+
+

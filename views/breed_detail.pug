@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    div(class='container-list')
+
+        h4 #{title}Порода: #{breed.name}
+        
+        //img(src=breed.img, alt="")
+        img(src=breed.img, alt="", width="450", height="400")
+        p #[strong Описание:] #{breed.description}
+        
+        div(style='margin-left:20px;margin-top:20px')

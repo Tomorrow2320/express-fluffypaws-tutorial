@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    div(class='container-home') 
+      h1= title
+      h2 Добро пожаловать на FluffyPaws! Узнай все о породах!
+
+      //if error
+        p Error getting dynamic content.
+      //else
+        h3 Представляем вам список пород собак с названиями и фотографиями:
+
+        ul
+          li #[strong Породы:] !{data.breed_count}

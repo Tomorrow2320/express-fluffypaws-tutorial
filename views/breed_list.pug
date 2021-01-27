@@ -1,0 +1,14 @@
+extends layout
+block content
+
+    h4=title
+    ul
+        - breed_list.sort(function(a, b) {let textA = a.name; let textB = b.name; return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;});
+        each breed in breed_list
+            li
+                a(href=breed.url) #{breed.name}
+                
+          
+
+        else
+            li There are no breeds.
